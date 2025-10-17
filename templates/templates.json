@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Site Institucional Premium",
+    "description": "Site profissional completo com 5 páginas, design responsivo e SEO otimizado para empresas que querem presença digital de alto impacto",
+    "price": "497.00",
+    "category": "Institucional",
+    "features": ["5 páginas personalizadas", "Design 100% responsivo", "Formulário de contato integrado", "Otimização SEO básica", "Integração com redes sociais", "Painel administrativo", "Suporte 30 dias"],
+    "delivery": "3-5 dias úteis",
+    "image": "https://via.placeholder.com/300x200/3B82F6/FFFFFF?text=Institucional+Premium"
+  },
+  {
+    "id": 2,
+    "name": "E-commerce Básico",
+    "description": "Loja virtual completa com até 50 produtos, carrinho de compras e integração com principais gateways de pagamento",
+    "price": "897.00",
+    "category": "E-commerce",
+    "features": ["Até 50 produtos", "Carrinho de compras", "Gateway de pagamento", "Painel administrativo", "Gestão de estoque", "Relatórios de vendas", "Suporte 60 dias"],
+    "delivery": "5-7 dias úteis",
+    "image": "https://via.placeholder.com/300x200/10B981/FFFFFF?text=E-commerce+Básico"
+  },
+  {
+    "id": 3,
+    "name": "Landing Page de Vendas",
+    "description": "Página de captura otimizada para conversões com design persuasivo, formulários e integração com WhatsApp",
+    "price": "297.00",
+    "category": "Landing Page",
+    "features": ["Design high-conversion", "Formulário de captura", "Integração WhatsApp", "Otimizado mobile", "Google Analytics", "Testes A/B básico", "Entrega rápida"],
+    "delivery": "2-3 dias úteis",
+    "image": "https://via.placeholder.com/300x200/F59E0B/FFFFFF?text=Landing+Page"
+  },
+  {
+    "id": 4,
+    "name": "Blog Profissional",
+    "description": "Blog moderno com sistema completo de posts, categorias, comentários e design clean para conteúdo",
+    "price": "397.00",
+    "category": "Blog",
+    "features": ["Sistema de posts", "Categorias e tags", "Área de comentários", "Design responsivo", "Otimizado SEO", "Busca interna", "Redes sociais"],
+    "delivery": "4-6 dias úteis",
+    "image": "https://via.placeholder.com/300x200/8B5CF6/FFFFFF?text=Blog+Profissional"
+  },
+  {
+    "id": 5,
+    "name": "Site One Page",
+    "description": "Site single page moderno com rolagem suave, animações e design impactante para projetos específicos",
+    "price": "247.00",
+    "category": "One Page",
+    "features": ["Design one page", "Rolagem suave", "Animações CSS", "Otimizado SEO", "Formulário de contato", "Mobile first", "Entrega rápida"],
+    "delivery": "2-4 dias úteis",
+    "image": "https://via.placeholder.com/300x200/EF4444/FFFFFF?text=One+Page"
+  }
+    ]
