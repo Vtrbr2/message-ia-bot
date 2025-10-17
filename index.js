@@ -6,6 +6,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { initDatabase, saveMessage, getContacts, getMessages, saveSchedule, getSchedules, getStats } from './services/database.js';
 import { generateResponse } from './services/geminiService.js';
+import whatsappService from './services/whatsappService.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -91,15 +92,7 @@ for (let hour = 13; hour <= 23; hour++) {
 }
 
 // Cliente WhatsApp
-const client = new Client({
-  authStrategy: new LocalAuth({
-    clientId: "whatsapp-bot-business"
-  }),
-  puppeteer: {
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  }
-});
+whatsappService.initialize()
 
 // Gerar QR Code
 client.on('qr', (qr) => {
@@ -348,6 +341,14 @@ async function showScheduleOptions(userPhone, message) {
   userStates.set(userPhone, 'awaiting_schedule_selection');
 }
 
+// Configure os callbacks se necessário
+whatsappService.onReady = () => {
+  console.log('✅ Bot WhatsApp totalmente inicializado!');
+};
+
+whatsappService.onQRCode = (qr) => {
+  console.log('QR Code gerado para autenticação');
+};
 // Handler de Seleção de Horário
 async function handleScheduleSelection(userPhone, userMessage, message, userInfo) {
   if (userMessage.toLowerCase() === 'voltar' || userMessage === '0') {
